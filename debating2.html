@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Libyan Debating Society</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background-color: #2E5A88; /* Intellectual blue */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1A3A5A;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #FFC857; /* Golden accent */
+            color: #1A3A5A;
+            border-radius: 4px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .mission-statement {
+            background-color: rgba(255, 200, 87, 0.9);
+            color: #1A3A5A;
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        .mission-statement h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* About Section */
+        .about-images {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .about-images img {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 4px solid #2E5A88;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 1rem;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.03);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1A3A5A;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: #FFC857;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .about-images {
+                flex-direction: column;
+            }
+
+            .about-images img {
+                width: 100%;
+                height: 200px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Young Libyan Debating Society</h1>
+        <p>Building a Strong Nation Through Informed Discourse</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#join">Join Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Shaping Tomorrow's Leaders Today</h2>
+        <p>Empowering young intellectuals through constructive dialogue</p>
+        
+        <div class="mission-statement">
+            <h3>Our Mission</h3>
+            <p>We are a collective of young visionaries committed to fostering critical thinking, promoting civic engagement, and developing leadership skills to build a stronger, more enlightened nation.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <section id="about">
+            <h2>Who We Are</h2>
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Debate team discussion">
+                <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Conference room debates">
+            </div>
+            <p style="margin: 1rem 0; font-size: 1.1rem;">
+                The Young Libyan Debating Society is a premier platform for young intellectuals dedicated to national development. Through rigorous debate and intellectual exchange, we aim to:
+            </p>
+            <ul style="margin: 1rem 2rem; line-height: 1.8;">
+                <li>Develop solutions to national challenges</li>
+                <li>Cultivate ethical leadership qualities</li>
+                <li>Promote democratic values and civic responsibility</li>
+                <li>Encourage innovative thinking for social progress</li>
+            </ul>
+        </section>
+
+        <section class="features" id="programs">
+            <div class="card">
+                <img class="card-image" 
+                     src="https://images.unsplash.com/photo-1521791055366-8d18d7ba5a0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" 
+                     alt="National Discourse Series">
+                <h3>National Discourse Series</h3>
+                <p>Engage in structured debates on critical national issues, policy matters, and social development topics.</p>
+            </div>
+            <div class="card">
+                <img class="card-image" 
+                     src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Leadership workshop">
+                <h3>Leadership Labs</h3>
+                <p>Interactive workshops focusing on public speaking, critical analysis, and ethical decision-making.</p>
+            </div>
+            <div class="card">
+                <img class="card-image" 
+                     src="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Youth Parliament session">
+                <h3>Youth Parliament</h3>
+                <p>Simulated parliamentary sessions to understand governance and legislative processes.</p>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="image-gallery">
+            <img class="gallery-image" 
+                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" 
+                 alt="Team brainstorming session">
+            <img class="gallery-image" 
+                 src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Conference room discussion">
+            <img class="gallery-image" 
+                 src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Group debate session">
+        </section>
+
+        <section id="join" style="margin: 4rem 0; text-align: center;">
+            <h2>Join Our Movement</h2>
+            <p>Be part of the national conversation. Register for our next session!</p>
+            <button style="background-color: #2E5A88; color: white; padding: 1rem 2rem; border: none; border-radius: 25px; cursor: pointer; margin: 1rem;">
+                Become a Member
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div style="margin: 1rem 0;">
+                    <label>Name:</label>
+                    <input type="text" style="width: 100%; padding: 0.5rem; border: 1px solid #ddd;">
+                </div>
+                <div style="margin: 1rem 0;">
+                    <label>Email:</label>
+                    <input type="email" style="width: 100%; padding: 0.5rem; border: 1px solid #ddd;">
+                </div>
+                <div style="margin: 1rem 0;">
+                    <label>Message:</label>
+                    <textarea style="width: 100%; padding: 0.5rem; height: 100px; border: 1px solid #ddd;"></textarea>
+                </div>
+                <button style="background-color: #2E5A88; color: white; padding: 0.8rem 2rem; border: none; border-radius: 4px; cursor: pointer;">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Young Libyan Debating Society</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>Contact: engage@ylibyandebate.org | Tel: (555) 987-6543</p>
+        <p>&copy; 2023 Young Libyan Debating Society. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! Our leadership team will respond shortly.');
+            this.reset();
+        });
+
+        // Registration button click
+        document.querySelector('button').addEventListener('click', function() {
+            window.location.href = '#contact';
+        });
+    </script>
+</body>
+</html>
